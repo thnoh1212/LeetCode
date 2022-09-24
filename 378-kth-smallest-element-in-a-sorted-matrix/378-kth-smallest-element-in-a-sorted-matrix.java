@@ -2,7 +2,7 @@ class Solution {
     public int kthSmallest(int[][] matrix, int k) {
         
         Comparator<Integer> comparator = (a, b) -> a.compareTo(b);
-        Map<Integer, Integer> map = new TreeMap<>();
+        Map<Integer, Integer> map = new TreeMap<>(comparator);
         int res = 0;
         
         for(int i = 0; i < matrix.length; i++){
