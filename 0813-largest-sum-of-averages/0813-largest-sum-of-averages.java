@@ -12,6 +12,8 @@ class Solution {
         }
             
         
+        
+        // 그 후, 1씩 증가하며 k가 i값일때의 합의 최대값 계산
         for(int i = 2; i <= k; i++){
             for(int j = i; j <= nums.length; j++){
                 for(int l = i - 1; l < j; l++){
